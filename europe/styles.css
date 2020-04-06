@@ -1,57 +1,51 @@
-/* My stylesheet */
+/* Stylesheet for Europe website */
 
-/* Universal selector */
+/* Remove all padding and margins from every tag */
 * {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
-/* Set the background colour */
 body {
   background-color: rgb(12, 34, 56);
   color: rgb(255, 255, 255);
+  font-family: Arial, Verdana, sans-serif;
 }
+
 /* Set new font */
 @font-face {
-  font-family: PhotoShoot;
-  src: url(Photoshoot.ttf);
+  /* Here, font-family means the name I am going to use for this font */
+  font-family: Signature;
+  src: url("fonts/Aline Signature Woff.ttf");
 }
 
-/* Set h1 format */
+/* Format main headings */
 h1 {
   color: rgb(255, 255, 0);
-  font-family: Photoshoot, Calibri, sans-serif;
-  margin: 35px 0 20px 0;
+  font-family: Signature;
+  margin-bottom: 20px;
 }
-
-/* format h2 */
+/* Format h2 heading */
 h2 {
-  font-family: Arial, sans-serif;
-  margin: 5px 0 10px 0;
+  margin-bottom: 5px;
 }
-
-/* paragraph formatting */
+/* Format paragraphs */
 p {
-  font-family: Arial, sans-serif;
-  margin-bottom: 18px;
-  line-height: 22px;
+  margin-bottom: 10px;
+}
+/* Format unordered list */
+ul {
+  margin: 0 0 15px 30px;
+
 }
 
 /* Formatting links */
 a {
-  color: rgb(132, 183, 245);
+  color: rgb(64, 242, 255);
+  /* Remove the underline */
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-}
-
-/* Format list */
-ul {
-  margin: 0 0 10px 30px;
-  font-family: Arial, sans-serif;
-  list-style-type: square;
-}
-li {
-  margin-bottom: 5px;
+  color: rgb(158, 248, 255);
 }
