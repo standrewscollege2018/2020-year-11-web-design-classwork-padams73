@@ -1,0 +1,40 @@
+/* Grid example */
+
+body {
+  background-color: rgb(255, 255, 0);
+}
+
+.banner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.logo {
+  background-color: red;
+  padding: 20px;
+}
+.navbar {
+  background-color: red;
+  padding: 20px;
+  text-align: right;
+}
+/* content formatting */
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  border: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: orange;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card p {
+  /* margin: top right bottom left */
+  margin: 30px 30px 10px 30px;
+}

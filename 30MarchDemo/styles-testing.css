@@ -1,0 +1,75 @@
+/* Testing CSS grid */
+
+/* Universal selector, removing padding and margins */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* formatting the body tag */
+body {
+  background-color: rgb(12, 34, 56);
+  color: rgb(255, 255, 255);
+}
+
+/* Setting up the grid container */
+.grid-container {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap is soace between columns (not outside the edge columns) */
+  /* grid-column-gap: 20px;
+  grid-row-gap: 20px; */
+  padding: 10px;
+}
+/* Set general format for divs inside grid-container */
+.grid-container > div {
+  background-color: rgb(66, 200, 245);
+  padding: 20px;
+
+}
+/* format the banner, with logo and navbar */
+.banner {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1 / 4;
+  /* make the banner a wrapper that contains logo and navbar */
+  display: grid;
+  /* grid-template-columns: 200px calc(100% - 200px); */
+  grid-template-columns: minmax(600px, 1fr) minmax(600px, 1fr);
+  /* align the bottom of the logo and navbar divs */
+  align-items: end;
+}
+.logo {
+
+}
+.navbar {
+  text-align: right;
+}
+
+/* footer */
+.footer {
+  grid-column: 1 / 4;
+  background-color: rgb(255, 0, 0);
+}
+.list-container ul {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap is soace between columns (not outside the edge columns) */
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 10px;
+  list-style-type: none;
+}
+.list-container > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+  padding: 20px;
+}
+@media only screen and (max-width: 620px) {
+	.navbar {
+		text-align: left;
+	}
+
+}
