@@ -2,8 +2,6 @@
 
 /* formatting the banner */
 .banner-container {
-  position: sticky;
-  top: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -23,8 +21,6 @@
   margin-top: 20px;
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-column-gap: 20px; */
-  /* grid-row-gap: 20px; */
   grid-gap: 20px;
 }
 .card {
@@ -33,10 +29,10 @@
   overflow: hidden;
 }
 /* Dealing with images in cards */
-.card > img {
+.card img {
   max-width: 100%;
   height: auto;
 }
-.card > p {
+.card p {
   margin-left: 10px;
 }
