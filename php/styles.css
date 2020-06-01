@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(206, 215, 217);
+}
+.container {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+}
+.celebrate {
+  color: rgb(13, 161, 5);
+}
+.wrong {
+  color: red;
+}
+.submit-button {
+  padding: 10px;
+  background-color: rgb(88, 5, 161);
+  color: white;
+}
+.input-guess {
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
