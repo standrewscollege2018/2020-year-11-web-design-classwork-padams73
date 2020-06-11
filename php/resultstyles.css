@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 40px;
+}
+.col {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #123456;
+  color: white;
+  padding: 20px;
+}
