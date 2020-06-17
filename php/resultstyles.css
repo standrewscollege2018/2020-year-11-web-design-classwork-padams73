@@ -15,3 +15,70 @@
   color: white;
   padding: 20px;
 }
+
+/* Format nav bar */
+.nav-container {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+.nav {
+  max-width: 1720px;
+  /*  set right and left margins to auto, this centres the box inside the nav-container */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.logo {
+  color: white;
+}
+/* Formatting the links to be white */
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.bars-white {
+  color: white;
+}
+.right-menu {
+  text-align: center;
+}
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+/* Hide the 3-bars and checkbox when full-screen */
+#nav-toggle, .burger-menu {
+  display: none;
+}
+/* Media query to display the burger menu when screen goes below 1000px wide */
+@media only screen and (max-width: 1000px) {
+  .burger-menu {
+    display: inline-block;
+    color: white;
+  }
+  .left-menu {
+    display: none;
+  }
+  .right-menu {
+    display: none;
+  }
+  #nav-toggle:checked ~ .left-menu {
+    display: grid;
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  #nav-toggle:checked ~ .right-menu {
+    display: grid;
+    grid-row: 3;
+    grid-column: span 3;
+    text-align: left;
+  }
+  .nav a {
+    padding: 10px;
+  }
+  .nav a:hover {
+    background-color: grey;
+  }
+}

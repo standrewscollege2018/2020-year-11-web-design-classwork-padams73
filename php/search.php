@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="resultstyles.css">
   </head>
   <body>
-    <form class="" action="results.php" method="post">
-      <input required type="text" name="search" placeholder="Enter first name to look for">
-      <button type="submit" name="button">Search</button>
-    </form>
+    <?php include("navbar.php"); ?>
+
   </body>
 </html>
